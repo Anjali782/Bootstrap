@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+     <link rel="stylesheet" href="bootstrap/css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+
+<style>
+      html{
+        scroll-behavior: smooth;
+      }
+    .logo-img{
+      border-radius: 50%;
+      margin-top: -5px;
+     box-shadow: 0 0 3px black;
+    }  
+.bg-teal{
+ background: linear-gradient(45deg,rgb(234,233,241)
+
+,rgb(234,233,241)
+);
+        }
+.btn-teal{
+  background: linear-gradient(40deg,rgb(56,176,199)
+,rgb(20,197,231));
+        }
+     
+   .fullscreen-landing{
+    background: white url("img/bg-image.jpg") no-repeat scroll center;
+    height: 100vh;
+    background-size: cover;
+}
+.overlay1{
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+}
+.overlay{
+    height: 100%;
+    color: white;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+       }
+    .fa-play-circle{
+    color:rgb(11,220,238);
+    border: 3px solid transparent;
+    border-radius: 50%;
+    animation: glow-icon 0.8s infinite linear;
+    }  
+@keyframes glow-icon{
+0% , 100%{
+    transform: scale(1,1);
+}
+50%{
+    transform: scale(1.07,1.07);
+    box-shadow: 0 0 10px white;
+    border: 3px dotted white;
+}
+}
+
+.intro-icon{
+    background-color: black;
+     color:rgb(11,220,238);
+     border-radius: 50%;
+}
+.bg-dark, .btn-dark, .text-dark{
+  background: linear-gradient(45deg,hsl(251,42%,79%),darkslategray) !important;
+}  
+.gallery-img , .gallery-img1{
+    border-radius: 50px;
+     box-shadow: 0 0 8px black;
+    border: 5px solid rgb(11,220,238) !important;
+   transition: all 0.5s;
+   cursor: pointer;
+}     
+.gallery-img:hover{
+    transform: scale(1.05,1.05);
+}
+.btn-outline-white{
+    border: 2px solid rgb(11,220,238) !important;
+}
+.btn{
+    border-radius: 50px;
+} 
+.btn-outline-white:hover{
+    border: 2px solid rgb(11,220,238) !important;
+    color: rgb(11,220,238) !important;
+     box-shadow: 0 0 10px rgb(11,220,238) !important;
+}
+.trainer-img{
+   box-shadow: 0 0 10px rgb(11,220,238); 
+   margin-top: -50px; 
+}
+.trainer-card{
+    border-radius: 10px !important;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px black !important;
+}  
+.trainer-card:hover{
+    border-radius: 10px !important;
+    transform: translateY(-20px);
+     background: linear-gradient(45deg,black,darkslategray) !important;
+     color:rgb(11,220,238) !important; 
+      box-shadow: 0 0 10px rgb(11,220,238) !important;
+}
+.map{
+width: 620px;
+height: 500px;   
+}
+@media (max-width: 576px){
+.we{
+    font-size: 45px;
+}
+.gallery-img{
+width: 250px;
+height: 220px;
+margin: 4px;
+}
+.gallery-img1{
+width: 320px;
+height: 240px;
+margin: 6px;
+
+}
+.card{
+ margin: 7px;   
+}
+.map{
+ width: 340px !important;
+height: 230px !important;   
+}
+} 
+@media ( max-width: 1400px){
+.we{
+    font-size: 53px;
+}
+.gallery-img{
+width: 350px;
+height: 300px;
+margin: 4px;
+}
+.gallery-img1{
+width: 450px;
+height: 380px;
+margin: 6px;
+
+}
+.card{
+ margin: 7px;   
+}
+.map{
+ width: 340px!important;
+height: 240px !important;   
+}
+} 
+</style>
+
+    <title>UiBrains</title>
+</head>
+<body>
+
+<!--NAVBAR-->
+
+
+<nav class="navbar navbar-light bg-teal navbar-expand-lg ">
+    <a  href="UiBrains_Website.html" class="navbar-brand font-weight-bold"> <img src="img/logo.jpg" width="30" height="30" class="logo-img">  UiBrains Tech</a>
+       <button class="navbar-toggler" data-toggle ="collapse" data-target ="#simpleNavbar1">
+        <span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="simpleNavbar1">
+                <ul class="navbar-nav ml-auto">
+                     <li class="nav-item px-2 active">
+                        <a  href="#home" class="nav-link"><i class="fa fa-home"></i> Home</a>
+                    </li>
+                     <li class="nav-item  px-2">
+                        <a href="#features" class="nav-link"><i class="fas fa-feather-alt"></i> Features</a>
+                    </li>
+                    <li class="nav-item  px-2">
+                        <a href="#gallery" class="nav-link"><i class="fas fa-images"></i> Gallery</a>
+                    </li>
+                    <li class="nav-item  px-2">
+                    <a  href="#courses" class="nav-link">
+                    <i class="fas fa-chalkboard-teacher"></i> Courses</a></li>
+                     <li class="nav-item  px-2">
+                        <a href="#trainers" class="nav-link"><i class="fas fa-users"></i> Trainers</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="#contacts" class="nav-link"><i class="fa fa-address-book"></i> Contacts</a>
+                    </li>
+                </ul>
+            </div>
+         </nav>
+
+
+<!--LANDING PAGE -->
+<section class="fullscreen-landing">
+    <div class="overlay1">
+        <div class="overlay mb-2">
+            <h5 class="display-4 font-weight-normal">Welcome to <span class="text-teal">UiBrains Technologies</span></h5>
+            <p class="lead m-2">ome representative placeholder content for the first ome representative placeholder content for the first sliome representative placeholder content for the first ome representative placeholder content for the first placeholder content for the firs sli</p>
+            <div>
+                <i class="fa fa-play-circle fa-4x"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--Intro Section-->
+
+<section id="features" class="p-4 bg-teal text-center">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4 mb-2">
+        <i class="fas fa-users mr-1 ml-5 fa-3x intro-icon p-2"></i>
+        <h5 class="font-weight-bold mt-2">Best Faculty Members</h5> 
+        <p class="lead">representative placeholder content for the ontent for the ffirst sliome placeholder content for the first ome representative placeholder content for the ontent for the ffirst sliome placeholder content for the first ome </p>
+      </div>
+       <div class="col-md-4 mb-2">
+        <i class="fas fa-code mr-1 ml-5 fa-3x intro-icon p-2"></i>
+        <h5 class="font-weight-bold mt-2">Best Coding Skills</h5> 
+        <p class="lead">representative placeholder content for the ontent for the ffirst sliome placeholder content for the first ome representative placeholder content for the ontent for the ffirst sliome placeholder content for the first ome </p>
+      </div>
+      <div class="col-md-4 mb-2">
+        <i class="fas fa-book-reader mr-1 ml-5 fa-3x intro-icon p-2"></i>
+        <h5 class="font-weight-bold mt-2">Best Course Material</h5> 
+        <p class="lead">representative placeholder content for the ontent for the ffirst sliome placeholder content for the first ome representative placeholder content for the ontent for the ffirst sliome placeholder content for the first ome </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--Intro Section 2-->
+<section id="features" class="p-4 bg-dark text-teal text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+               <h5 class="display-4 we">We Provide Best Training For Ui Technologies with Mean Stack</h5> 
+                <p class="lead">representative placeholder content for the ontent for the ffirst sliome placeholder content for the first ome representative placeholder content for the ontent for the ffirst sliome placeholder content for the first ome </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!--gallery section-->
+<section id="gallery" class="p-4 bg-teal text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2>Find your favourite course given below</h2>
+        <p class="lead">representative placeholder content for the ontent for ffirst sliome placeholder content for the first ome </p>
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-md-4">
+    <img src="img/angular.jpg" class="img-fluid img-thumbnail gallery-img" alt="">
+      </div>
+      <div class="col-md-4">
+    <img src="img/node.jpg" class="img-fluid img-thumbnail gallery-img" alt="">
+      </div>
+      <div class="col-md-4">
+    <img src="img/bootstrap.jpg" class="img-fluid img-thumbnail gallery-img" alt="">
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-4">
+    <img src="img/react.jpg" class="img-fluid img-thumbnail gallery-img" alt="">
+      </div>
+      <div class="col-md-4">
+    <img src="img/mongodb.jpg" class="img-fluid img-thumbnail gallery-img" alt="">
+      </div>
+      <div class="col-md-4">
+    <img src="img/web_tech.jpg" class="img-fluid img-thumbnail gallery-img" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--Learn More Section-->
+<section class="p-4 bg-dark text-teal text-center">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-9">
+               <h4 class="text-weight-bold">Learn more about India's No. 1 Institute</h4> 
+                <p class="lead">representative placeholder content for the ontent ontent ontent</p>
+            </div>
+            <div class="col-md-3">
+          <button class="btn btn-outline-white btn-block text-teal">Learn MOre</button>  </div>
+        </div>
+    </div>
+</section>
+
+
+<!--course SECTION -->
+<section id="courses" class="p-4 bg-teal">
+  <div class="container">
+   <div class="row align-items-center p-1">
+      <div class="col-md-6">
+         <h1 class="font-weight-bold mt-2">React Course</h1> 
+        <p class="lead">representative placeholder content forfor the ffirst sliome placeholder content for the first omtent for the ontent for the ffirst sliome the ontent for the ffirst sliome placeholder content for the first omtent for the ontent for the ffirst sliome placeholder content for the first </p>
+      </div>
+
+       <div class="col-md-6 ">
+        <img src="img/react.jpg" alt="" class="img-fluid img-thumbnail gallery-img1" style="height: 350px;">
+      </div>
+    </div>   
+  </div>  
+</section>
+
+<section class="p-4 bg-dark">
+  <div class="container">
+   <div class="row align-items-center p-1">
+        <div class="col-md-6 ">
+        <img src="img/angular.jpg" alt="" class="img-fluid img-thumbnail gallery-img1" style="height: 350px;">
+      </div>
+      <div class="col-md-6">
+         <h1 class="font-weight-bold mt-2 text-teal">Angular Course</h1> 
+        <p class="lead" style="color: white">representative placeholder content for the ontent for the ffirst sliome placeholder content for the first omtent for the ontent for the ffirst sliome placeholder contenfor the ffirst sliome placeholder content for the first omtent for the ontent for the ffirst sliomet for the first </p>
+      </div>
+    </div>    
+  </div>  
+</section>
+
+<section class="p-4 bg-teal">
+  <div class="container">
+    <div class="row align-items-center p-1">
+      <div class="col-md-6">
+         <h1 class="font-weight-bold mt-2">Bootstrap Course</h1> 
+        <p class="lead">representative placeholder content for the ontent for the ffirst sliome placeholder content for the first omtent for the ontent for the ffirst sliomefor the ffirst sliome first omtent for the ontent for the ffirst sliome placeholder content for the first </p>
+      </div>
+
+       <div class="col-md-6 ">
+        <img src="img/bootstrap.jpg" alt="" class="img-fluid img-thumbnail gallery-img1" style="height: 350px;">
+      </div>
+    </div>   
+  </div>  
+</section>
+
+
+<!--Trainers Section-->
+<section id="trainers" class="bg-dark p-4 text-teal">
+  <div class="container p-2">
+
+     <div class="row">
+      <div class="col text-center">
+        <h1>Meet The Trainers</h1>
+        <p class="lead">representative placeholder ffirst sliome placeholder content for the first </p>
+      </div>  
+     </div> 
+
+     <div class="row mt-5">
+      <div class="col-md-3">
+    <div class="card text-dark text-center">
+         <div class="card-body bg-teal trainer-card">
+         <img src="img/person1.jpg" alt="" class="img-fluid img-thumbnail rounded-circle w-50 trainer-img"> 
+         <h3 class="mt-3">Laura Williams</h3> 
+         <p>representative placeholder content for the ontent for the ffirst sliome placeholder the ffirst sliome placeholder content for the first </p>  
+         <div class="d-flex justify-content-between">
+            <i class="fab fa-facebook fa-2x p-2"></i>
+            <i class="fab fa-twitter fa-2x p-2"></i>
+            <i class="fab fa-github fa-2x p-2"></i> 
+         </div>
+         </div>  
+       </div>   
+      </div>
+ <div class="col-md-3">
+    <div class="card text-dark text-center">
+         <div class="card-body bg-teal trainer-card">
+         <img src="img/person2.jpg" alt="" class="img-fluid img-thumbnail rounded-circle w-50 trainer-img"> 
+         <h3 class="mt-3">Laura Williams</h3> 
+         <p>representative placeholder content for the ontent for the ffirst sliome placeholder the ffirst sliome placeholder content for the first </p>  
+         <div class="d-flex justify-content-between">
+            <i class="fab fa-facebook fa-2x p-2"></i>
+            <i class="fab fa-twitter fa-2x p-2"></i>
+            <i class="fab fa-github fa-2x p-2"></i> 
+         </div>
+         </div>  
+       </div>   
+      </div>
+       <div class="col-md-3">
+    <div class="card text-dark text-center">
+         <div class="card-body bg-teal trainer-card">
+         <img src="img/person3.jpg" alt="" class="img-fluid img-thumbnail rounded-circle w-50 trainer-img"> 
+         <h3 class="mt-3">Laura Williams</h3> 
+         <p>representative placeholder content for the ontent for the ffirst sliome placeholder the ffirst sliome placeholder content for the first </p>  
+         <div class="d-flex justify-content-between">
+            <i class="fab fa-facebook fa-2x p-2"></i>
+            <i class="fab fa-twitter fa-2x p-2"></i>
+            <i class="fab fa-github fa-2x p-2"></i> 
+         </div>
+         </div>  
+       </div>   
+      </div>
+       <div class="col-md-3">
+    <div class="card text-dark text-center">
+         <div class="card-body bg-teal trainer-card">
+         <img src="img/person4.jpg" alt="" class="img-fluid img-thumbnail rounded-circle w-50 trainer-img"> 
+         <h3 class="mt-3">Laura Williams</h3> 
+         <p>representative placeholder content for the ontent for the ffirst sliome placeholder the ffirst sliome placeholder content for the first </p>  
+         <div class="d-flex justify-content-between">
+            <i class="fab fa-facebook fa-2x p-2"></i>
+            <i class="fab fa-twitter fa-2x p-2"></i>
+            <i class="fab fa-github fa-2x p-2"></i> 
+         </div>
+         </div>  
+       </div>   
+      </div>
+
+     </div>
+
+  </div>  
+</section>
+
+
+<!--Contact Section-->
+<section id="contacts" class="bg-teal text-teal p-4">
+<div class="container">
+ <div class="row align-items-center">
+   <div class="col-md-6">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7779.985764952747!2d77.671803!3d12.843736!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe740ad12ff967924!2sHCL%20Technologies%20Ltd.!5e0!3m2!1sen!2sin!4v1643473314892!5m2!1sen!2sin" style="border:0; box-shadow: 0 0 10px black; border-radius: 10px; width: 500px; height: 450px;"allowfullscreen="" loading="lazy" class="map" ></iframe>            
+    </div>
+
+ <div class="col-md-6 p-2">
+  <div class="card-header bg-dark text-teal text-center">
+  <h3>Contact Us</h3>  
+  </div>
+  <div class="card-body bg-light">
+   <form>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Name">
+  </div>
+ <div class="form-group">
+    <input type="email" class="form-control" placeholder="Email">
+  </div>
+ <div class="form-group">
+    <input type="number" class="form-control" placeholder="Mobile No.">
+  </div>
+ <textarea class="form-control" rows="4" placeholder="Your Description"></textarea> 
+ <div class="form-group">
+<input type="submit" class="btn btn-dark mt-3 text-teal"> 
+ </div>  
+  </form>   
+  </div>
+</div>
+        </div>
+    </div>
+</section>
+
+    
+<!--Footer-->
+<section class="bg-dark text-teal text-center p-4">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+             <h3 class="text-weight-bold">Copyright &copy; 2022 , UiBrains Technologies</h3>
+             <h6 class="text-weight-bold">All Rights Reserved</h6>
+             <h6 class="text-weight-bold">Developed And Maintained By
+                <a class="text-warning" href="https://github.com/anjalig21" target="_black"></a><span class="text-warning text-weight-bold"> Anjali Gupta</span></h6>  
+            </div>
+        </div>
+    </div>
+</section> 
+
+
+
+<div class="container mt-5"></div>
+
+
+
+<!--bootstrap js files -->
+<script src="bootstrap/js/jquery-3.3.1.min.js"></script>
+<script src="bootstrap/js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<script src="bootstrap/js/mdb.js"></script>
+</body>
+</html>

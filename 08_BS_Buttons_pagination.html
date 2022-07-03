@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+<style>
+    .dropdown-item:hover{
+          background-color: rgb(255,200,100);
+          color: white;
+          box-shadow: 0 5px 10px gray;
+    }
+    .page-container{
+        border: 1px solid lightgray;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .pagination{
+        margin: 0;
+    }
+</style>
+    
+    <title>Buttons in Bootstrap4</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-success">
+    <a class="navbar-brand" href="#">Buttons in Bootstrap4</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div class="container mt-5">
+        <!--########################START HERE#########################-->
+
+        <!-- BUTTONS btn-primary-->
+        <button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+
+        <hr>
+
+        <!-- BUTTON TAGS -->
+        <a class="btn btn-primary" href="#" role="button">Link</a>
+<button class="btn btn-primary" type="submit">Button</button>
+<input class="btn btn-primary" type="button" value="Input">
+<input class="btn btn-primary" type="submit" value="Submit">
+<input class="btn btn-primary" type="reset" value="Reset">
+
+        <hr>
+
+        <!-- OUTLINE BUTTONS -->
+       <button type="button" class="btn btn-outline-primary">Primary</button>
+<button type="button" class="btn btn-outline-secondary">Secondary</button>
+<button type="button" class="btn btn-outline-success">Success</button>
+<button type="button" class="btn btn-outline-danger">Danger</button>
+<button type="button" class="btn btn-outline-warning">Warning</button>
+<button type="button" class="btn btn-outline-info">Info</button>
+<button type="button" class="btn btn-outline-light">Light</button>
+<button type="button" class="btn btn-outline-dark">Dark</button>
+
+         <hr>
+
+        <!-- BUTTON SIZES btn-lg , btn-sm , btn-block-->
+        <button class="btn btn-secondary btn-lg"><i class="fa fa-user"></i> Large button</button>
+        <button class="btn btn-secondary btn-sm">Small button</button>
+        <hr>
+         <button class="btn btn-warning btn-sm btn btn-outline-warning">Small button</button>
+        <hr>
+        <button class="btn btn-secondary btn-block">Block level button</button>
+
+        <hr>
+
+        <!-- SPLIT DROPDOWNS btn-group-->
+        <div class="btn-group">
+            <button class="btn btn-warning">My Button</button>
+            <button class="btn btn-warning" data-toggle ="dropdown">
+                <span>Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu p-2">
+                <a href="#" class="dropdown-item">Link One</a>
+                <a href="#" class="dropdown-item">Link Two</a>
+                <a href="#" class="dropdown-item">Link Three</a>
+                <a href="#" class="dropdown-item">Link Four</a>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- BUTTON GROUPS -->
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary">Left</button>
+            <button type="button" class="btn btn-primary">Middle</button>
+            <button type="button" class="btn btn-primary">Right</button>
+        </div>
+
+        <hr>
+
+        <!-- BUTTON TOOLBAR -->
+
+        <div class="btn btn-toolbar">
+            <div class="btn btn-group">
+                <button type="button" class="btn btn-info">1</button>
+                <button type="button"  class="btn btn-info">2</button>
+                <button type="button"  class="btn btn-info">3</button>
+                <button type="button" class="btn btn-info">4</button>
+            </div>
+            <div class="btn btn-group">
+                <button type="button" class="btn btn-info">5</button>
+                <button type="button" class="btn btn-info">6</button>
+                <button type="button" class="btn btn-info">7</button>
+            </div>
+            <div class="btn btn-group">
+                <button type="button" class="btn btn-info">8</button>
+            </div>
+        </div>
+
+ </div><!-- ./container -->
+    <div style="margin-top:300px;"></div>
+<!-- pagination -->
+
+<div class="page-container">
+    <ul class="pagination">
+        <li class="page-item">
+            <a href="#" class="page-link">Previous</a>
+        </li>
+        <li class="page-item active">
+            <a href="#" class="page-link">1</a>
+        </li>
+        <li class="page-item">
+            <a href="#" class="page-link">2</a>
+        </li>
+        <li class="page-item">
+            <a href="#" class="page-link">3</a>
+        </li>
+        <li class="page-item">
+            <a href="#" class="page-link">4</a>
+        </li>
+        <li class="page-item">
+            <a href="#" class="page-link">5</a>
+        </li>
+        <li class="page-item">
+            <a href="#" class="page-link">Next</a>
+        </li>
+    </ul>
+</div>
+
+
+<!-- pagination-sm , pagination-lg -->
+<div class="page-container">
+    <ul class="pagination pagination-sm">
+        <li class="page-item">
+            <a href="#" class="page-link">Previous</a>
+        </li>
+        <li class="page-item active">
+            <a href="#" class="page-link">1</a>
+        </li>
+        <li class="page-item">
+            <a href="#" class="page-link">2</a>
+        </li>
+        <li class="page-item">
+            <a href="#" class="page-link">3</a>
+        </li>
+        <li class="page-item">
+            <a href="#" class="page-link">4</a>
+        </li>
+        <li class="page-item">
+            <a href="#" class="page-link">5</a>
+        </li>
+        <li class="page-item">
+            <a href="#" class="page-link">Next</a>
+        </li>
+    </ul>
+</div>
+
+
+<!--custom pagination -->
+<div class="page-container">
+    <ul class="pagination pagination-lg">
+        <li class="page-item">
+            <a href="#" class="page-link">Previous</a>
+        </li>
+        <li class="page-item">
+            <a href="#" class="page-link bg-warning">1</a>
+        </li>
+        <li class="page-item">
+            <a href="#" class="page-link">2</a>
+        </li>
+        <li class="page-item">
+            <a href="#" class="page-link">3</a>
+        </li>
+        <li class="page-item">
+            <a href="#" class="page-link">4</a>
+        </li>
+        <li class="page-item">
+            <a href="#" class="page-link">5</a>
+        </li>
+        <li class="page-item">
+            <a href="#" class="page-link">Next</a>
+        </li>
+    </ul>
+</div>
+
+
+
+
+
+
+    </div><!-- ./container -->
+    <div style="margin-top:500px;"></div>
+
+<!-- BODY ENDS -->
+<script src="bootstrap/js/jquery-3.3.1.min.js"></script>
+<script src="bootstrap/js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/mdb.min.js"></script>
+</body>
+</html>

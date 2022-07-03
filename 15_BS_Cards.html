@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <title>Cards in Bootstrap4</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-success">
+    <a class="navbar-brand" href="#">Cards in Bootstrap4</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div class="container mt-5">
+        <!--########################START HERE#########################-->
+        
+
+       <!-- CARD WITH IMAGE -->
+        <div style="width:20rem" class="card">
+            <img src="img/card.jpg" class="img-fluid">
+            <div class="card-body">
+
+                <h4 class="card-title">Card Title</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, quas.</p>
+                <button class="btn btn-success btn-sm">Read More</button>
+            </div>
+        </div>
+
+        <br><br>
+
+        <!-- CARD WITH HEADER -->
+    <div class="card">
+        <div class="row">
+            <div class="col-md-4">
+               <img src="img/card.jpg" class="img-fluid"> 
+            </div>
+
+            <div class="col-md-8">
+                <h4 class="card-title mt-2">Card Title</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.orem ipsum dolor sit amet, consectetur adipisicing elit. Illoorem ipsum dolor sit amet, consectetur adipisicing elit. Illo Illo, quaet, consectetur adipisicing elit.orem ipsum dolor sit amet, consectetur adipisicing elit. Illoorem ipsum dolor sit amet, consectetur adipisicing elit. Illo Illo, quas.</p>
+                <button class="btn btn-warning btn-sm">Read More</button>
+            </div>
+        </div>
+    </div>
+
+    <br>
+     <div class="card">
+        <div class="row">
+            <div class="col-md-4">
+               <img src="img/card.jpg" class="img-fluid"> 
+            </div>
+
+            <div class="col-md-8">
+                <h4 class="card-title mt-2">Card Title</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adet, consectetur adipisicing elit.orem ipsum dolor sit amet, consectetur adipisicing elit. Illoorem ipsum dolor sit amet, consectetur adipisicing elit. Illo Illo, quaipisicing elit.orem ipsum dolor sit amet, consectetur adipisicing elit. Illoorem ipsum dolor sit amet, consectetur adipisicing elit. Illo Illo, quas.</p>
+                <button class="btn btn-secondary btn-sm">Read More</button>
+            </div>
+        </div>
+    </div>
+
+        <br><br>
+
+        <!-- Registration Card -->
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card animated jackInTheBox">
+                <div class="card-header bg-primary text-white text-center">
+                    <h3>Register Here</h3>
+                </div>
+
+                <div class="card-body bg-light">
+
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="UserName">
+                        </div>
+                         <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Confirm Password">
+                        </div>
+                        <div class="text-center">
+                            <input type="submit" value="Register" class="btn btn-primary">
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <br><br>
+
+        <br><br>
+
+        <!-- IMAGE OVERLAYS  card-img , card-img-overlay -->
+        <div class="card">
+            <img src="img/card_img.jpg" style="width: auto; height: 200px" class="card-img">
+            <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p><small class="btn btn-success">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+
+        <br><br>
+
+         <!-- Fancy Card With Header And Footer // Grid Cards-->
+
+        <div class="row align-items-center">
+
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-header bg-warning text-white">
+                         <div class="row align-items-center">
+                             <div class="col">
+                                 <i class="fa fa-list fa-4x"></i>
+                             </div>
+                             <div class="col">
+                                <h3 class="display-3">08</h3>
+                                <h3>Tasks</h3>
+                             </div>
+                         </div>
+                    </div>
+                      
+                <div class="card-body">
+                    <h5>
+                        <a href="#" class="text-warning">View Details</a><i class="fa fa-arrow-alt-circle-right text-warning ml-2"></i>
+                    </h5>
+                </div>
+
+                    <div class="card-footer">
+                        
+                    </div>
+                </div>
+            </div>
+
+
+             <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-header bg-secondary text-white">
+                         <div class="row align-items-center">
+                             <div class="col">
+                                 <i class="fa fa-snowflake fa-4x"></i>
+                             </div>
+                             <div class="col">
+                                <h3 class="display-3">08</h3>
+                                <h3>Tasks</h3>
+                             </div>
+                         </div>
+                    </div>
+                      
+                <div class="card-body">
+                    <h5>
+                    <a href="#" class="text-secondary">View Details</a><i class="fa fa-arrow-alt-circle-right text-secondary ml-2"></i>
+                    </h5>
+                </div>
+
+                    <div class="card-footer">
+                        
+                    </div>
+                </div>
+            </div>
+
+
+             <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-header bg-success text-white">
+                         <div class="row align-items-center">
+                             <div class="col">
+                                 <i class="fa fa-sitemap fa-4x"></i>
+                             </div>
+                             <div class="col">
+                                <h3 class="display-3">08</h3>
+                                <h3>Tasks</h3>
+                             </div>
+                         </div>
+                    </div>
+                      
+                <div class="card-body">
+                    <h5>
+                        <a href="#" class="text-success">View Details</a><i class="fa fa-arrow-alt-circle-right text-success ml-2"></i>
+                    </h5>
+                </div>
+
+                    <div class="card-footer">
+                        
+                    </div>
+                </div>
+            </div>
+
+ <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-header bg-danger text-white">
+                         <div class="row align-items-center">
+                             <div class="col">
+                                 <i class="fa fa-book fa-4x"></i>
+                             </div>
+                             <div class="col">
+                                <h3 class="display-3">08</h3>
+                                <h3>Tasks</h3>
+                             </div>
+                         </div>
+                    </div>
+                      
+                <div class="card-body">
+                    <h5>
+                        <a href="#" class="text-danger">View Details</a><i class="fa fa-arrow-alt-circle-right text-danger ml-2"></i>
+                    </h5>
+                </div>
+
+                    <div class="card-footer">
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+         <br><br>
+    </div><!-- ./container -->
+    <div style="margin-top:500px;"></div>
+
+<!-- BODY ENDS -->
+<script src="bootstrap/js/jquery-3.3.1.min.js"></script>
+<script src="bootstrap/js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/mdb.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y574444444PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+<style>
+    .bg-light-blue{
+        background-color: rgb(176,174,185);
+    }
+</style>
+
+    <title>Modals in Bootstrap4</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-success">
+    <a class="navbar-brand" href="#">Modals in Bootstrap4</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div class="container mt-5">
+    <!--######################## START HERE #########################-->
+
+    <!-- MODAL TRIGGER -->
+<button class="btn btn-secondary" data-toggle="modal" data-target="#register-modal">Register</button>
+<div class="modal" id="register-modal">
+    <div class="modal-dialog">
+        <div class="modal-content animated jello">
+           <div class="modal-header bg-secondary text-white">
+               <h3>Register Here</h3>
+               <button class="close" data-dismiss="modal">
+                   <i class="fa fa-times-circle"></i>
+               </button>
+           </div> 
+           <div class="modal-body bg-light-blue">
+           <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter name" class="form-control">
+                </div>
+
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" id="email" placeholder="Enter email" class="form-control">
+                <small>Your email will not be shared with anyone</small>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input class="form-control" type="password" id="password" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label for="password">Confirm Password</label>
+                <input class="form-control" type="password" id="password" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <textarea rows="4" class="form-control" placeholder="About Yourself"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Register" class="btn btn-secondary">
+                <a href="#" class="btn btn-dark" data-dismiss="modal">Close</a>
+            </div>
+            </form>
+           </div>
+
+           <div class="modal-footer">
+               
+           </div>
+        </div>
+    </div>
+</div>
+
+    <!--######################## END HERE #########################-->
+  </div>
+
+  <div style="margin-top:500px;"></div>
+
+<!-- BODY ENDS -->
+<script src="bootstrap/js/jquery-3.3.1.min.js"></script>
+<script src="bootstrap/js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/mdb.min.js"></script>
+</body>
+</html>
